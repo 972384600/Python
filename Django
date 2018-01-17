@@ -1,0 +1,8 @@
+1.使用pyCharm新建Django工程，运行时遭遇数据库报错
+
+①安装pymysql：   
+pip3 install pymysql
+
+②在工程文件__init__.py中新增代码：
+import pymysql
+pymysql.install_as_MySQLdb()
